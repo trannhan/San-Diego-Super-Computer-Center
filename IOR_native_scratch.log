@@ -1,0 +1,50 @@
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Mon Aug  4 11:07:41 2014
+Command line used: /home/etrain113/SI2014/INTRO/IOR-gordon -i 1 -F -b 16g -t 1m -v -v
+Machine: Linux gcn-14-46.sdsc.edu 2.6.32-431.20.3.el6.x86_64 #1 SMP Thu Jun 19 21:14:45 UTC 2014 x86_64
+Using synchronized MPI timer
+Start time skew across all tasks: 0.00 sec
+Path: /scratch/etrain113/1461193.gordon-fe2.local
+FS: 279.3 GiB   Used FS: 0.0%   Inodes: 279.5 Mi   Used Inodes: 0.0%
+Participating tasks: 4
+task 0 on gcn-14-46.sdsc.edu
+task 1 on gcn-14-46.sdsc.edu
+task 2 on gcn-14-46.sdsc.edu
+task 3 on gcn-14-46.sdsc.edu
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (4 per node)
+	repetitions        = 1
+	xfersize           = 1 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 64 GiB
+
+Using Time Stamp 1407175661 (0x53dfcbed) for Data Signature
+Commencing write performance test.
+Mon Aug  4 11:07:41 2014
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s) total(s)  iter
+------    ---------  ---------- ---------  --------   --------   --------  --------   ----
+write     247.62     16777216   1024.00    0.000168   264.66     0.564148   264.66     0    XXCEL
+[RANK 000] open for reading file testFile.00000000 XXCEL
+Commencing read performance test.
+Mon Aug  4 11:12:06 2014
+
+read      139.49     16777216   1024.00    0.000014   469.84     0.980120   469.84     0    XXCEL
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  Op grep #Tasks tPN reps  fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize
+
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write         247.62     247.62      247.62      0.00     247.62     247.62      247.62      0.00 264.66121   4 4 1 1 0 1 0 0 1 17179869184 1048576 68719476736 -1 POSIX EXCEL
+read          139.49     139.49      139.49      0.00     139.49     139.49      139.49      0.00 469.83557   4 4 1 1 0 1 0 0 1 17179869184 1048576 68719476736 -1 POSIX EXCEL
+
+Max Write: 247.62 MiB/sec (259.65 MB/sec)
+Max Read:  139.49 MiB/sec (146.26 MB/sec)
+
+Run finished: Mon Aug  4 11:19:56 2014

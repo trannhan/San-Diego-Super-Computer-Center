@@ -1,0 +1,96 @@
+14/08/04 11:36:06 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = gcn-4-42.sdsc.edu/198.202.100.163
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.7.0_13
+************************************************************/
+14/08/04 11:36:06 INFO util.GSet: Computing capacity for map BlocksMap
+14/08/04 11:36:06 INFO util.GSet: VM type       = 64-bit
+14/08/04 11:36:06 INFO util.GSet: 2.0% max memory = 1004929024
+14/08/04 11:36:06 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+14/08/04 11:36:06 INFO util.GSet: recommended=2097152, actual=2097152
+14/08/04 11:36:06 INFO namenode.FSNamesystem: fsOwner=etrain113
+14/08/04 11:36:06 INFO namenode.FSNamesystem: supergroup=supergroup
+14/08/04 11:36:06 INFO namenode.FSNamesystem: isPermissionEnabled=true
+14/08/04 11:36:06 INFO namenode.FSNamesystem: dfs.block.invalidate.limit=100
+14/08/04 11:36:06 INFO namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+14/08/04 11:36:06 INFO namenode.FSEditLog: dfs.namenode.edits.toleration.length = 0
+14/08/04 11:36:06 INFO namenode.NameNode: Caching file names occuring more than 10 times 
+14/08/04 11:36:07 INFO common.Storage: Image file /scratch/etrain113/1461377.gordon-fe2.local/namenode_data/current/fsimage of size 115 bytes saved in 0 seconds.
+14/08/04 11:36:07 INFO namenode.FSEditLog: closing edit log: position=4, editlog=/scratch/etrain113/1461377.gordon-fe2.local/namenode_data/current/edits
+14/08/04 11:36:07 INFO namenode.FSEditLog: close success: truncate to 4, editlog=/scratch/etrain113/1461377.gordon-fe2.local/namenode_data/current/edits
+14/08/04 11:36:07 INFO common.Storage: Storage directory /scratch/etrain113/1461377.gordon-fe2.local/namenode_data has been successfully formatted.
+14/08/04 11:36:07 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at gcn-4-42.sdsc.edu/198.202.100.163
+************************************************************/
+14/08/04 11:36:28 INFO input.FileInputFormat: Total input paths to process : 1
+14/08/04 11:36:28 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+14/08/04 11:36:28 WARN snappy.LoadSnappy: Snappy native library not loaded
+14/08/04 11:36:28 INFO mapred.JobClient: Running job: job_201408041136_0001
+14/08/04 11:36:29 INFO mapred.JobClient:  map 0% reduce 0%
+14/08/04 11:36:39 INFO mapred.JobClient:  map 7% reduce 0%
+14/08/04 11:36:40 INFO mapred.JobClient:  map 15% reduce 0%
+14/08/04 11:36:43 INFO mapred.JobClient:  map 26% reduce 0%
+14/08/04 11:36:46 INFO mapred.JobClient:  map 35% reduce 0%
+14/08/04 11:36:49 INFO mapred.JobClient:  map 44% reduce 0%
+14/08/04 11:36:52 INFO mapred.JobClient:  map 54% reduce 0%
+14/08/04 11:36:55 INFO mapred.JobClient:  map 55% reduce 0%
+14/08/04 11:36:56 INFO mapred.JobClient:  map 57% reduce 0%
+14/08/04 11:37:00 INFO mapred.JobClient:  map 61% reduce 19%
+14/08/04 11:37:01 INFO mapred.JobClient:  map 64% reduce 19%
+14/08/04 11:37:02 INFO mapred.JobClient:  map 72% reduce 19%
+14/08/04 11:37:04 INFO mapred.JobClient:  map 75% reduce 19%
+14/08/04 11:37:05 INFO mapred.JobClient:  map 76% reduce 19%
+14/08/04 11:37:06 INFO mapred.JobClient:  map 82% reduce 19%
+14/08/04 11:37:07 INFO mapred.JobClient:  map 84% reduce 19%
+14/08/04 11:37:08 INFO mapred.JobClient:  map 87% reduce 19%
+14/08/04 11:37:10 INFO mapred.JobClient:  map 89% reduce 19%
+14/08/04 11:37:11 INFO mapred.JobClient:  map 91% reduce 19%
+14/08/04 11:37:13 INFO mapred.JobClient:  map 94% reduce 19%
+14/08/04 11:37:14 INFO mapred.JobClient:  map 96% reduce 19%
+14/08/04 11:37:16 INFO mapred.JobClient:  map 97% reduce 23%
+14/08/04 11:37:17 INFO mapred.JobClient:  map 99% reduce 23%
+14/08/04 11:37:19 INFO mapred.JobClient:  map 100% reduce 23%
+14/08/04 11:37:25 INFO mapred.JobClient:  map 100% reduce 90%
+14/08/04 11:37:26 INFO mapred.JobClient:  map 100% reduce 100%
+14/08/04 11:37:27 INFO mapred.JobClient: Job complete: job_201408041136_0001
+14/08/04 11:37:27 INFO mapred.JobClient: Counters: 29
+14/08/04 11:37:27 INFO mapred.JobClient:   Job Counters 
+14/08/04 11:37:27 INFO mapred.JobClient:     Launched reduce tasks=1
+14/08/04 11:37:27 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=150221
+14/08/04 11:37:27 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+14/08/04 11:37:27 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+14/08/04 11:37:27 INFO mapred.JobClient:     Launched map tasks=7
+14/08/04 11:37:27 INFO mapred.JobClient:     Data-local map tasks=7
+14/08/04 11:37:27 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=33195
+14/08/04 11:37:27 INFO mapred.JobClient:   File Output Format Counters 
+14/08/04 11:37:27 INFO mapred.JobClient:     Bytes Written=25042709
+14/08/04 11:37:27 INFO mapred.JobClient:   FileSystemCounters
+14/08/04 11:37:27 INFO mapred.JobClient:     FILE_BYTES_READ=287171209
+14/08/04 11:37:27 INFO mapred.JobClient:     HDFS_BYTES_READ=426163661
+14/08/04 11:37:27 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=337436718
+14/08/04 11:37:27 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=25042709
+14/08/04 11:37:27 INFO mapred.JobClient:   File Input Format Counters 
+14/08/04 11:37:27 INFO mapred.JobClient:     Bytes Read=426162765
+14/08/04 11:37:27 INFO mapred.JobClient:   Map-Reduce Framework
+14/08/04 11:37:27 INFO mapred.JobClient:     Map output materialized bytes=49750020
+14/08/04 11:37:27 INFO mapred.JobClient:     Map input records=8481548
+14/08/04 11:37:27 INFO mapred.JobClient:     Reduce shuffle bytes=49750020
+14/08/04 11:37:27 INFO mapred.JobClient:     Spilled Records=22100470
+14/08/04 11:37:27 INFO mapred.JobClient:     Map output bytes=704009297
+14/08/04 11:37:27 INFO mapred.JobClient:     Total committed heap usage (bytes)=1429209088
+14/08/04 11:37:27 INFO mapred.JobClient:     CPU time spent (ms)=198340
+14/08/04 11:37:27 INFO mapred.JobClient:     Combine input records=81640551
+14/08/04 11:37:27 INFO mapred.JobClient:     SPLIT_RAW_BYTES=896
+14/08/04 11:37:27 INFO mapred.JobClient:     Reduce input records=3062178
+14/08/04 11:37:27 INFO mapred.JobClient:     Reduce input groups=1891108
+14/08/04 11:37:27 INFO mapred.JobClient:     Combine output records=11967865
+14/08/04 11:37:27 INFO mapred.JobClient:     Physical memory (bytes) snapshot=1805438976
+14/08/04 11:37:27 INFO mapred.JobClient:     Reduce output records=1891108
+14/08/04 11:37:27 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=6468513792
+14/08/04 11:37:27 INFO mapred.JobClient:     Map output records=72734864
+copyToLocal: Target /home/etrain113/SI2014/INTRO/HADOOP/part-r-00000 already exists

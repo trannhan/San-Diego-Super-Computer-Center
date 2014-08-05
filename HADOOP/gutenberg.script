@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N gutenberg
+#PBS -q normal
+#PBS -l nodes=2:ppn=16:native:flash
+#PBS -l walltime=01:00:00
+#PBS -m e
+##PBS -M youremailaddresshere
+#PBS -V
+#PBS -v Catalina_maxhops=None
+cd $PBS_O_WORKDIR
+module load hadoop/1.2.1
+export HADOOP_CONF_DIR=/home/$USER/mycluster
+myhadoop-configure.sh
+start-all.sh
+hadoop dfs -mkdir input
+hadoop dfs -copyFromLocal $PBS_O_WORKDIR/gutenberg.txt input/
+hadoop jar $HADOOP_HOME/hadoop-examples-1.2.1.jar wordcount input/gutenberg.txt output
+hadoop dfs -copyToLocal output/part* $PBS_O_WORKDIR
+stop-all.sh
+myhadoop-cleanup.sh
